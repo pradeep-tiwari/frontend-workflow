@@ -1,0 +1,48 @@
++------------------------------------------------------------------------------------
+Yeoman
++------------------------------------------------------------------------------------
+
+--> Yeoman is a scaffolding tool.
+--> It provides an opinionated approach towards project building.
+--> The Yeoman workflow is composed of a scaffolding tool (yo), the build tools
+    (grunt & gulp), and the package managers (bower & npm).
+--> It relies on a set of generators which are plug-ins to accomplish different
+    tasks.
+    
+
++------------------------------------------------------------------------------------
+The official AngularJS generator
++------------------------------------------------------------------------------------
+
+--> You want to scaffold your shiny new AngularJS project adhering to stamdards?
+    
+    1) First run following command to install its generator:
+    
+    npm install -g generator-angular
+    
+    2) To kick off the new project scaffolding process, run following in your
+    project root:
+    
+    yo angular
+    
+--> The AngualrJS generator also  comes with subgenerators for productivity:
+
+    1) controller ---  yo angular:controller controllerName
+    2) directive  ---  yo angular:directive directiveName
+    3) filter     ---  yo angular:filter filterName
+    4) route      ---  yo angular:route routeName
+    5) service    ---  yo angular:service serviceName
+    6) decorator  ---  yo angular:decorator decoratorName
+    7) view       ---  yo angular:view viewName
+    
+
++------------------------------------------------------------------------------------
+Other generators
++------------------------------------------------------------------------------------
+
+--> There are many other generators like angular-fullstack, ionic, jhipster etc.
+
+--> This command will scaffold your new MEAN stack project:
+
+    npm install -g generator-angular-fullstack
+    yo angular-fullstack

@@ -1,0 +1,61 @@
++------------------------------------------------------------------------------------
+Bower
++------------------------------------------------------------------------------------
+
+--> Like NPM, Bower is a package manager, but for the front end.
+--> It is distributed as a Node.js command line tool and requires GIT to be
+    installed.
+
+
++------------------------------------------------------------------------------------
+Installation
++------------------------------------------------------------------------------------
+
+--> Install it globally using:
+    
+    npm install -g bower
+
+
++------------------------------------------------------------------------------------
+Commands
++------------------------------------------------------------------------------------
+
+--> To see a list of supported commands:
+
+    bower help
+    
+--> To search for a package:
+
+    bower search package-name
+    
+--> Note that bower installs packages in bower_components. To change the location
+    where bower installs packages:
+    
+    1) Create a .bowerrc file.
+    2) Set the directory property:
+    
+        {
+            "directory": "app/bower_components"
+        }
+        
+--> To install a package, go to your project directory and type:
+
+    bower install package-name
+    
+
+--> For better tracking of thrid-party dependencies, Like Node's package.json or
+    Composer's composer.json, you can create a bower.json file or rely on Bower to
+    create one:
+    
+    1) Run following in your project's root:
+    
+        bower init
+        bower install -SF angular
+        
+--> -SF is a shortcut for two flags:
+    
+    --save & --force-latest
+    
+--> You can always rely on help command. For example:
+
+    bower help install
