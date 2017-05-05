@@ -1,0 +1,43 @@
++------------------------------------------------------------------------------------
+npm
++------------------------------------------------------------------------------------
+
+--> Like PHP Composer, npm is Node package manager.
+-> Manages project dependencies.
+--> Like composer.json, the project root should have package.json.
+--> All dependencies are installed as Node modules in "node_modules" folder.
+--> Think of node_modules folder as similar to vendor folder in PHP projects.
+--> Simply run following command to install project dependencies:
+    
+    ~ npm install
+    
+--> A sample package.json configuration:
+
+    // file: package.json
+    {
+        "name": "myApp",
+        "version": "0.0.0",
+        "description": "sample project description",
+        "dependencies": {
+            "express": "~4.9.0",
+            "jade": "~1.6.0"
+        }        
+    }
+
+--> To summarize, working with npm is basically a three step process:
+
+    1) Define dependencies in package.json file.
+    2) Run command: npm install
+    3) You will have all dependencies installed in node_modules folder.
+
+--> Adding more packages is easy:
+
+    ~ npm install --save package-name
+    
+--> Wanna update an existing package? Simply modify the package version and run:
+
+    ~ npm install
+    
+--> So wanna remove a package, simply:
+
+    ~ npm uninstall package-name

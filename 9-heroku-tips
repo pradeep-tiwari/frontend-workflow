@@ -1,0 +1,42 @@
++------------------------------------------------------------------------------------
+Heroku
++------------------------------------------------------------------------------------
+
+--> Heroku is PAAS for hosting app on cloud.
+--> It is essentially a cloud of Git repositories.
+--> It uses Git as the deployment method.
+
+
++------------------------------------------------------------------------------------
+Pushing Your Node App to Heroku
++------------------------------------------------------------------------------------
+
+--> Ofcourse you need to sign up.
+--> Next you need to install Heroku Toolbelt on your local system.
+--> In you package.json file, add property "engines":
+
+        "engines": {
+            "node": "~4.2.1",
+            "npm": "~2.2.0"
+        }
+    
+--> Ofcourse you can always run node --version & npm --version for rescue.
+--> The above configuration tells Heroku the type and version of application
+    platform in use.
+--> Heroku also needs a Procfile to know the process and command used to start it:
+
+        // project-root: Procfile
+        web: npm start
+--> Once done, stop your Node server and run following:
+
+        ~ foreman start
+        
+--> Foreman is a utility shipped with Heroku Toolbelt. It can be used to verify the
+    setup and run our app locally before pushing the application up to Heroku. So
+    everytime you think to push your app to Heroku, why not first verify the setup?
+    
+--> Running the above command will start the app on port 5000. Go visit following:
+
+        localhost:5000
+        
+--> 

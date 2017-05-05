@@ -1,0 +1,92 @@
++------------------------------------------------------------------------------------
+Express Framework
++------------------------------------------------------------------------------------
+
+--> An minimal Node web application framework.
+--> To install, simply run following:
+
+    ~ npm init
+    ~ npm install --save express
+    
+--> If you already have a package.json file, mention express as a dependency and
+    run following:
+    
+    npm install
+    
+--> In order to quickly spin-up an express application locally, for development,
+    
+    1) Install express generator globally:
+    
+        npm install -g express-generator
+        
+    2) Verify the installation:
+    
+        express --version
+        
+    See details: https://expressjs.com/en/starter/generator.html
+    
+
++------------------------------------------------------------------------------------
+Working with express-generator
++------------------------------------------------------------------------------------
+
+--> Run following for help:
+
+    express --help
+    
+--> With many available option flags, this creates a minimal Express app:
+
+    ~ express
+    
+--> Note that the above only creates a minimal app structure with dependencies
+    declared in package.json file. Run following to actually install dependencies:
+    
+    ~ npm install
+    
+--> Once installed, run following to start your express app:
+
+    ~ set DEBUG=myapp:* & npm start
+    
+--> Wow, I am delighted. Head over to localhost:3000 for the modern JavaScript era.
+
+
+
++------------------------------------------------------------------------------------
+Working with express-generator
++------------------------------------------------------------------------------------
+
+--> A Node application compiles before running. So do not forget to press Ctrl+C
+    to terminate current job and restart using: npm start.
+    
+--> This is not true for assets like scripts, images, css, and view templates. Only
+    a change in application code requires Node restart.
+    
+    
++------------------------------------------------------------------------------------
+Life is Waste if not Automate
++------------------------------------------------------------------------------------
+
+--> Run this command to install node autostarter:
+
+    ~ npm install -g forever
+
+--> Now go to your project root and run:
+
+    forever start app.js
+    
+--> Note that nodemon does the same:
+
+    ~ npm install -g nodemon
+    ~ nodemon
+    
+--> nodemon is fine but forever is much preferred because of its many possibilities.
+
+
++------------------------------------------------------------------------------------
+EJS as View Engine
++------------------------------------------------------------------------------------
+
+--> I like simplicity of EJS templating engine. To add it:
+
+    1) Update dependecies in package.json with "ejs": "~2.5.6". Choose you version.
+    2) Run: npm install
