@@ -1,8 +1,8 @@
 # frontend-workflow
 
-Notes on frontend workflow and build process automation using Node.js, NPM, Bower, Grunt, and Yeoman.
+Notes on frontend workflow and build process automation using Node.js, NPM, Bower, Grunt, and Yeoman. Below is a quick introduction to Node.js REPL.
 
-#REPL: The Node Shell
+### REPL: The Node Shell
 
 Stands for "Read-Eval-Print-Loop". 
 
