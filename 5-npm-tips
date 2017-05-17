@@ -41,3 +41,11 @@ npm
 --> So wanna remove a package, simply:
 
     ~ npm uninstall package-name
+    
+ --> To install a package globally:
+ 
+    ~ npm install -g packageName
+    
+ --> To specify your development dependecy:
+ 
+    ~ npm install --save-dev packageName
